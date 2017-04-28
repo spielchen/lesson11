@@ -1,0 +1,130 @@
+/*Basic settings*/
+body {
+  font-size: 10px;
+}
+@font-face {
+  font-family: 'Audi Type Extended';
+  src: url('../fonts/AudiType-ExtendedBold.eot');
+  src: url('../fonts/AudiType-ExtendedBold.eot?#iefix') format('embedded-opentype'), url('../fonts/AudiType-ExtendedBold.woff2') format('woff2'), url('../fonts/AudiType-ExtendedBold.woff') format('woff'), url('../fonts/AudiType-ExtendedBold.ttf') format('truetype'), url('../fonts/AudiType-ExtendedBold.svg#AudiType-ExtendedBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/*Fonts Mixins*/
+.main-text {
+  font-family: 'Audi Type Extended';
+}
+/*Color mixins*/
+.header {
+  text-align: center;
+  background: url('../img/bg-main.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.header-main-text {
+  font-family: 'Audi Type Extended';
+  color: #ff0000;
+  font-size: 7rem;
+  margin-bottom: 0;
+}
+.header-text {
+  margin-top: .5rem;
+  font-family: 'Audi Type Extended';
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 15rem;
+}
+.content_first-box {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background: url('../img/A5.jpg') no-repeat center center;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.content_first-box:hover .wrap {
+  -webkit-transform: translateY(0%) rotate(0deg);
+      -ms-transform: translateY(0%) rotate(0deg);
+          transform: translateY(0%) rotate(0deg);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.content_second-box {
+  background: url('../img/A8.jpg') no-repeat center center;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.content_second-box:hover .wrap {
+  -webkit-transform: translateY(0%) rotate(0deg);
+      -ms-transform: translateY(0%) rotate(0deg);
+          transform: translateY(0%) rotate(0deg);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.content_third-box {
+  background: url('../img/TT.jpg') no-repeat center center;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.content_third-box:hover .wrap {
+  -webkit-transform: translateY(0%) rotate(0deg);
+      -ms-transform: translateY(0%) rotate(0deg);
+          transform: translateY(0%) rotate(0deg);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sign span {
+  font-size: 3rem;
+}
+.sign #modell {
+  color: #ff0000;
+  font-size: 2rem;
+}
+.sign a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  width: 25rem;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.sign a:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ff0000;
+}
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-family: 'Audi Type Extended';
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transform: translateY(100%) rotate(45deg);
+      -ms-transform: translateY(100%) rotate(45deg);
+          transform: translateY(100%) rotate(45deg);
+}
+.wrap:hover {
+  opacity: 1;
+}
